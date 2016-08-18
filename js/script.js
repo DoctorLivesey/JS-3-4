@@ -40,7 +40,7 @@ var obj = {
     makeAnswers: function(y){
       this.answers = document.createElement('li');
       this.answers.classList.add('question-item');
-      this.answers.innerHTML = '<input type="checkbox">' + this.answer[y];
+      this.answers.innerHTML = '<label><input type="checkbox">' + this.answer[y];
       this.questions.appendChild(this.answers);
     },
     makeButton: function(){
